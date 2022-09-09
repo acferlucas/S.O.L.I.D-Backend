@@ -21,5 +21,11 @@ export class Appointment {
 
   constructor (props: AppointmentProps) {
     this.props = props
+
+    const { startsAt, endsAt } = props
+
+    if (endsAt <= startsAt) {
+      throw new Error('End date cannot be before start date')
+    }
   }
 }
