@@ -24,7 +24,7 @@ export class Appointment {
 
     const { startsAt, endsAt } = props
 
-    if(startsAt <= new Date()) {
+    if(startsAt < new Date()) {
       throw new Error('Start date cannot be before now')
     }
 
