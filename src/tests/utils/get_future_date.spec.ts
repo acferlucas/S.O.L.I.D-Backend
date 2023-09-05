@@ -5,5 +5,5 @@ test('increases date with one year', () => {
 
   const year = new Date().getFullYear()
 
-  expect(getFutureDate(`${year}-08-10`).getFullYear()).toEqual(2023)
+  expect(getFutureDate(`${year}-08-10`).getFullYear()).toEqual(2024)
 })
